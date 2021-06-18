@@ -1,0 +1,29 @@
+{
+  "name": "petittubebot",
+  "version": "1.0.0",
+  "description": "A Discord bot which sends random YouTube videos with no views",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InTheMainframe/PetitTubeBot.git"
+  },
+  "keywords": [
+    "discord",
+    "bot"
+  ],
+  "author": "InTheMainframe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InTheMainframe/PetitTubeBot/issues"
+  },
+  "homepage": "https://github.com/InTheMainframe/PetitTubeBot#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "discord.js": "^12.5.3",
+    "fs": "0.0.1-security",
+    "request": "^2.88.2"
+  }
+}
