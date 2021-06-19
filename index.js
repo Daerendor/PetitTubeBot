@@ -4,7 +4,7 @@ const cheerio = require('cheerio'); // for parsing the html
 const fs = require('fs'); // just to read the token.txt file
 
 const client = new Discord.Client();
-const token = fs.readFileSync('token.txt', 'utf8');
+const token = fs.readFileSync('token.txt', 'utf8').trim();
 
 console.log('Connecting to Discord...');
 var connectStart = Date.now();
