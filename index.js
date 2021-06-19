@@ -14,7 +14,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    // a janky way of checking if the bot is @mentioned
+    // check if the bot is mentioned
     if (message.content.startsWith(`<@${client.user.id}>`) || message.content.startsWith(`<@!${client.user.id}>`)) {
         var requestStart = Date.now();
         request({
@@ -22,14 +22,12 @@ client.on('message', message => {
             // deliberately using http instead of https for fastest response
             headers: {
                 'User-Agent': 'Mozilla/5.0 (compatible; PetitTubeBot/1.0; +https://github.com/InTheMainframe/PetitTubeBot)',
-                // the http "user agent" the server sees when the request sent - literally useless, but its there
             },
         }, (error, response, html) => {
             var responseTime = Date.now() - requestStart;
-            // fyi an expected iframe tag would look like:
+            // an expected iframe tag would look like:
             // <iframe width="630" height="473" src="https://www.youtube.com/embed/dQw4w9WgXcQ?version=3&f=videos&app=youtube_gdata&autoplay=1" frameborder="0" allowfullscreen></iframe>
-            // with the embed link being the src attribute, and the example video id being dQw4w9WgXcQ
-            // the video id will be taken from the embed link, and used to create a normal youtube link
+            // with the youtube embed link being the src attribute, and the example video id being dQw4w9WgXcQ
             var $ = cheerio.load(html); // the whole page as html
             var embedLink = $('iframe').attr('src'); // the embed link (containing the video id)
             var prefix = 'https://www.youtube.com/embed/';
