@@ -1,7 +1,7 @@
-const Discord = require('discord.js');
-const request = require('request');
-const cheerio = require('cheerio');
-const fs = require('fs')
+const Discord = require('discord.js'); // for controlling the discord bot
+const request = require('request'); // for loading petittube
+const cheerio = require('cheerio'); // for parsing the html
+const fs = require('fs'); // just to read the token.txt file
 
 const client = new Discord.Client();
 const token = fs.readFileSync('token.txt', 'utf8');
