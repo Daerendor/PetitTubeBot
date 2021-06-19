@@ -1,5 +1,5 @@
 # PetitTubeBot
-A Discord bot which sends random YouTube videos with no views
+A Discord bot integration of the petittube.com website - sends random YouTube videos with no views.
 ## Usage
 This bot is super simple. In any channel the bot is in, just @mention the bot, and it will reply with a YouTube link.
 ## Set it up yourself
