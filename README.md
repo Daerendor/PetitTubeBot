@@ -1,4 +1,4 @@
-<div align="center"><img src="https://raw.githubusercontent.com/InTheMainframe/PetitTubeBot/main/PetitTubeLogo.png" /></div>
+<div align="center"><img src="https://raw.githubusercontent.com/jlij/PetitTubeBot/main/PetitTubeLogo.png" /></div>
 
 # PetitTubeBot
 A Discord bot integration of the petittube.com website, which gives you random YouTube videos with no views. You can try it out [here](https://discord.gg/72rUN6vqKs)!
