@@ -28,7 +28,7 @@ client.on("message", async msg => {
                     {
                         url: "http://petittube.com/",
                         headers: {
-                            "User-Agent": "Mozilla/5.0 (compatible; PetitTubeBot/1.0; +https://bit.ly/3kzriOv)",
+                            "User-Agent": "Mozilla/5.0 (compatible; PetitTubeBot/1.0; +http://github.com/jlij/PetitTubeBot)",
                         },
                     },
                     (err, resp, html) => {
