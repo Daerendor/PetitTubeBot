@@ -46,7 +46,7 @@ client.on("message", async (msg) => {
                 );
             }),
         ])
-            .then(([sentMsg, {html: body}]) => {
+            .then(([sentMsg, {body: html}]) => {
                 let responseTime = Date.now() - startDate,
                     idPref = "https://www.youtube.com/embed/",
                     idSuff = "?version=3&f=videos&app=youtube_gdata&autoplay=1",
